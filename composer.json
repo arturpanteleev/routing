@@ -1,0 +1,28 @@
+{
+  "name": "cekta/routing",
+  "description": "Routing component, base router",
+  "license": "GPL-3.0",
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.0",
+    "guzzlehttp/psr7": "@stable"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable",
+    "friendsofphp/php-cs-fixer": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cekta\\Routing\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Cekta\\Routing\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "cs-fix": "vendor/bin/php-cs-fixer fix"
+  }
+}
